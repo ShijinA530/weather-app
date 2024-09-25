@@ -123,7 +123,7 @@ const App = () => {
                       alt="..."
                       className='h-9 mt-1'
                     />
-                    <h2 className='text-4xl font-extrabold'>{apiData?.main?.temp} &#176;C</h2>
+                    <h2 className='text-4xl font-extrabold'>{(apiData?.main?.temp / 10).toFixed(2)}&#176;C</h2>
                   </div>
                 </>
               )}
